@@ -9,7 +9,7 @@ import PostgresDb from './05_D/postgres-db';
 (() => {
   const square = new Square(2);
   const circle = new Circle(2);
-  const areaCalculator = new AreaCalculator([square, circle]);
+  const areaCalculator = new AreaCalculator( [circle, square]);
   console.log('O1_S principle: ', areaCalculator.sum());
   const triangle = new Triangle(10, 2);
   const areaCalculatorWithOpenClosed = new AreaCalculator([square, circle, triangle]);
